@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(226,234,252);
+    background: linear-gradient(111deg, rgba(226,234,252,1) 0%, rgba(215,227,252,1) 50%, rgba(204,219,253,1) 100%);
+}
+
+.main-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 12px 70px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+@media (max-width: 1024px){
+    .main-container{
+        margin: 12px auto;
+    }
+}
+
+@media (max-width: 800px){
+    .main-container{
+        margin: 6px auto;
+    }
+}
+
+.header{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+    .header__logo{
+        font-family: 'Electrolize', sans-serif;
+        font-size: 5rem;
+        margin-left: 35px;
+        color: #6d10d8;
+        ;
+    }
+
+    @media (max-width: 800px){
+        .header__logo{
+            margin-left: 15px;
+            font-size: 4rem;
+        }
+    }
+
+.frames{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 800px){
+    .frames{
+        display: block;
+    }
+}
+
+.bigFrame{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 20px;
+}
+
+    .bigFrame__text{
+        width: 550px;
+        height: 350px;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: #0466c8;
+        border: none;
+        background: none;
+        resize: none;
+        outline: none;
+        }
+
+        .bigFrame__text::placeholder{
+            color: #0466c8;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 800px){
+            .bigFrame__text{
+                height: 200px;
+                font-size: 1.2rem;
+            }
+
+            .bigFrame__text::placeholder{
+                font-size: 1rem;
+            }
+        }    
+
+
+.warning{
+    display: flex;
+    align-content: center;
+    height: 18px;
+    margin-bottom: 15px;
+}
+    .warning__icon{
+        border-radius: 50%;
+    }
+    .warning__text{
+        font-family: Verdana;
+        font-size: .7rem;
+        margin-left: 5px;
+    }   
+
+.buttons{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+@media (max-width: 590px){
+    .buttons{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}
+
+.button{
+    width: 230px;
+    height: 40px;
+    border-radius: 15px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+}
+
+@media (max-width: 800px){
+    .button{
+        width: 200px;
+    }
+}
+
+@media (max-width: 590px){
+    .button{
+        margin: 10px;
+    }
+}
+
+.button-blue{
+    background-color: #001845;
+    color: #f5f1f1;
+}
+
+.button-light{
+    background-color: #f5f3f3;
+    color: #222121;
+}
+
+    .button-blue:active{
+        background-color: #0466c8;
+        transition: all .7s;
+    }
+
+    .button-light:active{
+        background-color: #6d10d8;
+        color: #f5f1f1;
+        transition: all .7s;
+    }
+
+.buttonSmall{
+    width: 150px;
+}
+.smallFrame{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+    height: 550px;
+    border-radius: 25px;
+    background: #001845;
+    text-align: center;
+    color: #f5f1f1;
+    
+}
+
+@media (max-width: 800px){
+    .smallFrame{
+        width: fit-content;
+        height: 300px;
+        margin: 20px auto;
+    }
+}
+
+    .smallFrame_button{
+        display: flex;
+        justify-content: center;
+        margin: 15px 0;
+    }
+
+.text{
+    margin: 20px;
+}
+    .text__title{
+        font-family: 'Electrolize', sans-serif;
+        font-size: 1.7rem;
+        margin: 60px 0;
+    }
+    .text__principal{
+        font-family: 'Electrolize', sans-serif;
+        font-size: 1.2rem;
+    }
+
+    @media (max-width: 800px){
+        .text__title{
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+
+        .text__principal{
+            font-size: 1rem;
+        }
+    }
+
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    font-family:'Times New Roman', serif;
+    font-size: .9rem;
+    font-weight: 300;
+}

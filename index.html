@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Proyecto: Codificador</title>
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <header class="header">
+            <p class="header__logo">a</p>
+        </header>
+
+        <div class="frames">
+
+            <section class="bigFrame">
+                <textarea name="texto" 
+                          id="text1"
+                          class="bigFrame__text"
+                          autofocus
+                          placeholder="Ingrese aqui el texto"></textarea>
+                <div class="warning">
+                    <img src="/img/exclamacion.png" alt="signo de exclamacion" class="warning__icon">
+                    <span class="warning__text">Escriba letras minisculas, sin acentos</span>
+                </div>
+                <div class="buttons">
+                    <button id="boton1" class="button button-blue">Encriptar</button>
+                    <button id="boton2" class="button button-light">Desencriptar</button>
+                </div>
+            </section>
+
+            <section class="smallFrame">
+                <div class="text" id="eliminar">
+                    <h2 id="title" class="text__title">Ningun mensaje fue encontrado</h2>
+                    <p id="encriptado" class="text__principal">Ingresa el texto que desea encriptar o desencriptar</p>
+                </div>
+                <div class="smallFrame_button">
+                    <button id="boton3" class="button button-light buttonSmall">Copiar</button>
+                </div>
+            </section>
+
+        </div>
+
+        <footer class="footer">
+
+            <p class="footer__text">Franco Tallei - Alura 2022</p>
+
+        </footer>
+
+    </div>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
